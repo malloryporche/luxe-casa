@@ -1,0 +1,17 @@
+/* Navbar styling */
+ul.nav.navbar-nav {
+  position: absolute;
+  right: 25px;
+}
+
+/* Header Carousel Styling */
+header.row.heading {
+  background: url('../imgs/carousel1/bh10.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-backgroound-size: cover;
+  background-size: cover;
+}
+.carousel-inner {
+  min-height: 800px;
+}
