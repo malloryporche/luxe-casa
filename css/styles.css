@@ -30,7 +30,20 @@ Made with love by Mallory | https://www.malloryburke.com
 /* CSS-RESET, BOOTSTRAP STYLING */
 /*  DEFINE VARIABLES */
 /* DEFINE VARIABLES & MIXINS */
+/* Serve images optimized for retina screens */
 /*  GLOBAL STYLES  */
+/* Typography, headings */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center; }
+
+ul li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
 /*  PAGE: HOME & NAVIGATION  */
 /* Navbar styling */
 ul.nav.navbar-nav {
