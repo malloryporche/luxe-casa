@@ -11,6 +11,14 @@ header.row.heading {
   -moz-background-size: cover;
   -o-backgroound-size: cover;
   background-size: cover;
+  height: 100%;
+  svg {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  fill: white;
+  }
 }
 .carousel-inner {
   min-height: 800px;
