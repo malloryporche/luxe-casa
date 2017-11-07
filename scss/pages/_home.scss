@@ -20,6 +20,24 @@ header.row.heading {
   fill: white;
   }
 }
-.carousel-inner {
+.carousel-inner, .carousel-item {
   min-height: 800px;
+  div.caption {
+      @include centered;
+      padding: 60px;
+      background: black;
+      opacity: 0.8;
+      letter-spacing: 4px;
+      h3 {
+        font-size: 50px;
+        text-transform: uppercase;
+      }
+      h6 {
+        margin-top: 40px;
+        color: gray;
+        letter-spacing: 3px;
+        font-size: 24px;
+        font-weight: lighter;
+      }
+  }
 }

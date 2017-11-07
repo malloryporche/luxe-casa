@@ -65,7 +65,29 @@ header.row.heading {
     bottom: 0;
     fill: white; }
 
-.carousel-inner {
+.carousel-inner, .carousel-item {
   min-height: 800px; }
+  .carousel-inner div.caption, .carousel-item div.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    background: black;
+    opacity: 0.8;
+    letter-spacing: 4px; }
+    .carousel-inner div.caption h3, .carousel-item div.caption h3 {
+      font-size: 50px;
+      text-transform: uppercase; }
+    .carousel-inner div.caption h6, .carousel-item div.caption h6 {
+      margin-top: 40px;
+      color: gray;
+      letter-spacing: 3px;
+      font-size: 24px;
+      font-weight: lighter; }
 
 /*# sourceMappingURL=styles.css.map */
