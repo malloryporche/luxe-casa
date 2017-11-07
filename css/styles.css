@@ -191,4 +191,23 @@ article.wrap.p-2 {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 
+/* Services Styling */
+li.service {
+  text-align: center; }
+  li.service i.fa {
+    padding: 45px;
+    margin: 25px auto;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #313139;
+    color: white;
+    font-size: 45px; }
+  li.service h4 {
+    font-size: 16px; }
+  li.service h5 {
+    font-size: 16px;
+    text-transform: none;
+    padding: 10px 30px 30px 30px;
+    line-height: 1.5; }
+
 /*# sourceMappingURL=styles.css.map */

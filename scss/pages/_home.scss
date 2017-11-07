@@ -74,3 +74,27 @@ article.wrap.p-2 {
     @include centered;
   }
 }
+
+
+/* Services Styling */
+li.service {
+  text-align: center;
+  i.fa {
+    padding: 45px;
+    margin: 25px auto;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: $primary_color;
+    color: white;
+    font-size: 45px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 16px;
+    text-transform: none;
+    padding: 10px 30px 30px 30px;
+    line-height: 1.5;
+  }
+}
