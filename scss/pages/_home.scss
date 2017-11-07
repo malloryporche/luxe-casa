@@ -41,3 +41,17 @@ header.row.heading {
       }
   }
 }
+
+
+/* Welcome Section */
+h2.welcome {
+  margin: 40px auto;
+  letter-spacing: 3px;
+  line-height: 1.75;
+  font-weight: light;
+  + p {
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
