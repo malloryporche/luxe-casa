@@ -36,9 +36,40 @@
 
 </head>
 
-<body class="container-fluid">
+<body>
 
 <!--Carousel Header -->
+<div class="container-fluid">
+	<!--Navbar -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navbarSpy">
+		<a class="navbar-brand" href="#page-top"><img src="imgs/logo.png" width="45px" alt="Mallory Burke Software Developer and Digital Marketing SEO"></a>
+
+	<!--Toggle mobile navigation -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileNavigation" aria-controls="mobileNavigation" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="mobileNavigation">
+		<ul class="nav navbar-nav ">
+			<li class="nav-item">
+				<a class="nav-link" href="#welcome">Welcome<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#portfolio">Portfolio</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#services">Services</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#about">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+			</li>
+		</ul>
+	</div>
+	</nav>
+	<!-- End navigation -->
 	<header class="row heading">
 		<div class="col-lg-12 carousel slide" id="headerCarousel">
 			<!-- <ol class="carousel-indicators">
@@ -115,51 +146,21 @@
 			<svg preserveaspectratio="none" style="height: 143px;" version="1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> <polygon points="0,0 50,100 100,0 100,100 0,100"></polygon> </svg>
 		</section>
 	</header>
-
-	<!--Navbar -->
-	<nav class="navbar sticky-top navbar-expand-lg navbar-light" id="navbarSpy">
-		<a class="navbar-brand" href="#page-top"><img src="imgs/logo.png" width="45px" alt="Mallory Burke Software Developer and Digital Marketing SEO"></a>
-
-	<!--Toggle mobile navigation -->
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileNavigation" aria-controls="mobileNavigation" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div class="collapse navbar-collapse" id="mobileNavigation">
-		<ul class="nav navbar-nav ">
-			<li class="nav-item">
-				<a class="nav-link" href="#welcome">Welcome<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#portfolio">Portfolio</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#services">Services</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#about">About</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#contact">Contact</a>
-			</li>
-		</ul>
-	</div>
-	</nav>
-	<!-- End navigation -->
+</div>
 
 	<!--Setup ScrollSpy -->
-	<main class="container" data-spy="scroll" data-target="#navbarSpy">
+	<main data-spy="scroll" data-target="#navbarSpy">
 
-	<section class="row" id="welcome">
-		<div class="col-lg-12">
-			<h2 class="welcome">Hi,&nbspwelcome to&nbspTENUTO.</h2>
-			<p>TENUTO is a responsive WordPress portfolio Onepage/Multipage theme for the professional creative.  It's easy to use and concentrates on showcasing your work to potential clients and employers with a unique interactive interface.  Montes vel pellentesque ut. Elit! <span class="accent">Quis aliquet</span> integer, lundium eros et eu magna cursus? Dis parturient tortor placerat! Sed. Placerat <span class="accent">sed pid</span>. Animi ratione ab itaque maxime praesentium tenetur, doloremque architecto amet temporaiure!</p>
-		</div>
-			<a class="link" href="about.html">About <span>TENUTO</span></a>
-			<a class="link" href="#"><span>Our</span> Projects</a>
-
-
-	</section>
+	<div class="container">
+		<section class="row" id="welcome">
+			<div class="col-lg-12">
+				<h2 class="welcome">Hi,&nbspwelcome to&nbspTENUTO.</h2>
+				<p>TENUTO is a responsive WordPress portfolio Onepage/Multipage theme for the professional creative.  It's easy to use and concentrates on showcasing your work to potential clients and employers with a unique interactive interface.  Montes vel pellentesque ut. Elit! <span class="accent">Quis aliquet</span> integer, lundium eros et eu magna cursus? Dis parturient tortor placerat! Sed. Placerat <span class="accent">sed pid</span>. Animi ratione ab itaque maxime praesentium tenetur, doloremque architecto amet temporaiure!</p>
+			</div>
+				<a class="link" href="about.html">About <span>TENUTO</span></a>
+				<a class="link" href="#"><span>Our</span> Projects</a>
+		</section>
+	</div>
 
 	<section class="row" id="portfolio">
 		<div class="col-lg-12">

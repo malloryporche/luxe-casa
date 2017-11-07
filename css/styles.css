@@ -106,7 +106,6 @@ a.link {
 
 /* Navbar styling */
 nav#navbarSpy {
-  max-width: 1170px;
   margin: 0 auto;
   background-color: #fff;
   text-transform: uppercase;
