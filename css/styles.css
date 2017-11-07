@@ -174,4 +174,22 @@ h2.welcome {
     text-align: center;
     line-height: 1.5; }
 
+/* Portfolio Flexbox Display */
+article.portfolio-outer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex; }
+
+article.wrap.p-2 {
+  position: relative; }
+  article.wrap.p-2 h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
 /*# sourceMappingURL=styles.css.map */

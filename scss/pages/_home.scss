@@ -59,3 +59,18 @@ h2.welcome {
     line-height: 1.5;
   }
 }
+
+
+/* Portfolio Flexbox Display */
+article.portfolio-outer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+article.wrap.p-2 {
+  position: relative;
+  h3 {
+    @include centered;
+  }
+}
