@@ -79,6 +79,13 @@ article.wrap.p-2 {
 /* Services Styling */
 li.service {
   text-align: center;
+  padding: 60px;
+  &:hover {
+    i.fa {
+      transform: scale(.5);
+      @include transition(all, .5s, ease-in-out,0);
+    }
+  }
   i.fa {
     padding: 45px;
     margin: 25px auto;
@@ -87,6 +94,7 @@ li.service {
     background-color: $primary_color;
     color: white;
     font-size: 45px;
+    @include transition(all, .5s, ease-in-out,0);
   }
   h4 {
     font-size: 16px;

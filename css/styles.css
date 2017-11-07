@@ -42,6 +42,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 2px; }
 
+.col-lg-12 h2 + h6 {
+  margin-bottom: 100px;
+  color: gray;
+  text-transform: none;
+  padding: 0 60px; }
+
 ul li {
   list-style-type: none; }
 
@@ -193,7 +199,30 @@ article.wrap.p-2 {
 
 /* Services Styling */
 li.service {
-  text-align: center; }
+  text-align: center;
+  padding: 60px; }
+  li.service:hover i.fa {
+    transform: scale(0.5);
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
   li.service i.fa {
     padding: 45px;
     margin: 25px auto;
@@ -201,7 +230,27 @@ li.service {
     border-radius: 50%;
     background-color: #313139;
     color: white;
-    font-size: 45px; }
+    font-size: 45px;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
   li.service h4 {
     font-size: 16px; }
   li.service h5 {

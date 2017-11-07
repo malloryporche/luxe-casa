@@ -7,7 +7,14 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-
+}
+.col-lg-12 h2 {
+  + h6 {
+    margin-bottom: 100px;
+    color: gray;
+    text-transform: none;
+    padding: 0 60px;
+  }
 }
 ul li {
   list-style-type: none;
