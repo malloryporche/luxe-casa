@@ -42,10 +42,14 @@ header.row.heading {
   }
 }
 
+/* Section Styling */
+section.row {
+  margin: 150px 0;
+}
 
 /* Welcome Section */
 h2.welcome {
-  margin: 40px auto;
+  margin: 45px auto;
   letter-spacing: 3px;
   line-height: 1.75;
   font-weight: light;

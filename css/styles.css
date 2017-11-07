@@ -37,14 +37,21 @@ body {
   font-family: "Raleway";
   font-weight: 300; }
 
-a, h1, h2, h3, h4, h5, h6 {
-  text-align: center; }
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 ul li {
   list-style-type: none; }
 
-a.link {
+a {
   text-decoration: none;
+  text-align: center; }
+  a:hover {
+    text-decoration: none; }
+
+a.link {
   color: black;
   text-transform: uppercase;
   padding: 15px;
@@ -52,16 +59,16 @@ a.link {
   background-color: white;
   margin: 20px auto;
   letter-spacing: 2px;
-  -webkit-transition-property: background-color;
-  -moz-transition-property: background-color;
-  -ms-transition-property: background-color;
-  -o-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -ms-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   -webkit-transition-timing-function: ease-in-out;
   -moz-transition-timing-function: ease-in-out;
   -ms-transition-timing-function: ease-in-out;
@@ -73,20 +80,19 @@ a.link {
   -o-transition-delay: 0;
   transition-delay: 0; }
   a.link:hover {
-    text-decoration: none;
     background-color: black;
     color: white;
     font-weight: bolder;
-    -webkit-transition-property: background-color;
-    -moz-transition-property: background-color;
-    -ms-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -ms-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
     -webkit-transition-timing-function: ease-in-out;
     -moz-transition-timing-function: ease-in-out;
     -ms-transition-timing-function: ease-in-out;
@@ -101,7 +107,11 @@ a.link {
 /* Navbar styling */
 nav#navbarSpy {
   max-width: 1170px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px; }
 
 /*  PAGE: HOME & NAVIGATION  */
 /* Navbar styling */
@@ -149,9 +159,13 @@ header.row.heading {
       font-size: 24px;
       font-weight: lighter; }
 
+/* Section Styling */
+section.row {
+  margin: 150px 0; }
+
 /* Welcome Section */
 h2.welcome {
-  margin: 40px auto;
+  margin: 45px auto;
   letter-spacing: 3px;
   line-height: 1.75;
   font-weight: light; }

@@ -3,15 +3,23 @@ body {
   font-family: "Raleway";
   font-weight: 300;
 }
-a, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  // text-transform: uppercase;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
 }
 ul li {
   list-style-type: none;
 }
-a.link {
+a {
+  text-decoration: none;
+  text-align: center;
+  &:hover {
     text-decoration: none;
+  }
+}
+a.link {
     color: black;
     text-transform: uppercase;
     padding: 15px;
@@ -19,19 +27,20 @@ a.link {
     background-color: white;
     margin: 20px auto;
     letter-spacing: 2px;
-    @include transition(background-color, 1s, ease-in-out, 0);
+    @include transition(all, .5s, ease-in-out, 0);
     &:hover {
-      text-decoration: none;
       background-color: black;
       color: white;
       font-weight: bolder;
-      @include transition(background-color, 1s, ease-in-out, 0);
+      @include transition(all, .5s, ease-in-out, 0);
     }
 }
-
-
 /* Navbar styling */
 nav#navbarSpy {
   max-width: 1170px;
   margin: 0 auto;
+  background-color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
 }
