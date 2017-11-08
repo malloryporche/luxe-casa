@@ -126,11 +126,7 @@ ul.nav.navbar-nav {
 
 /* Header Carousel Styling */
 header.row.heading {
-  background: url("../imgs/carousel1/bh10.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-backgroound-size: cover;
-  background-size: cover;
+  background: url("../imgs/carousel1/bh10.jpg") no-repeat center center scroll;
   height: 100%; }
   header.row.heading svg {
     width: 100%;
@@ -138,6 +134,14 @@ header.row.heading {
     left: 0;
     bottom: 0;
     fill: white; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    header.row.heading {
+      background: url("../imgs/carousel1/bh10@2x.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -ms-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
 
 .carousel-inner, .carousel-item {
   min-height: 800px; }
@@ -201,8 +205,19 @@ article.wrap.p-2 {
 li.service {
   text-align: center;
   padding: 60px; }
-  li.service:hover i.fa {
-    transform: scale(0.5);
+  li.service#firstService {
+    background-color: #313139;
+    color: #F2F2F5; }
+  li.service#secondService {
+    background-color: #FF512F; }
+  li.service#thirdService {
+    background-color: #f39c12; }
+  li.service#fourthService {
+    background-color: #F2F2F5; }
+    li.service#fourthService:hover {
+      color: #28282E; }
+  li.service:hover {
+    color: white;
     -webkit-transition-property: all;
     -moz-transition-property: all;
     -ms-transition-property: all;
@@ -223,12 +238,56 @@ li.service {
     -ms-transition-delay: 0;
     -o-transition-delay: 0;
     transition-delay: 0; }
+    li.service:hover h4 {
+      transform: scale(1.5);
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -ms-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      -ms-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: ease-in-out;
+      -moz-transition-timing-function: ease-in-out;
+      -ms-transition-timing-function: ease-in-out;
+      -o-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+      -webkit-transition-delay: 0;
+      -moz-transition-delay: 0;
+      -ms-transition-delay: 0;
+      -o-transition-delay: 0;
+      transition-delay: 0; }
+    li.service:hover i.fa {
+      transform: scale(0.5);
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -ms-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      -ms-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: ease-in-out;
+      -moz-transition-timing-function: ease-in-out;
+      -ms-transition-timing-function: ease-in-out;
+      -o-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+      -webkit-transition-delay: 0;
+      -moz-transition-delay: 0;
+      -ms-transition-delay: 0;
+      -o-transition-delay: 0;
+      transition-delay: 0; }
   li.service i.fa {
     padding: 45px;
     margin: 25px auto;
-    border: 1px solid black;
+    border: 1px solid #28282E;
     border-radius: 50%;
-    background-color: #313139;
+    background-color: #28282E;
     color: white;
     font-size: 45px;
     -webkit-transition-property: all;
@@ -252,7 +311,27 @@ li.service {
     -o-transition-delay: 0;
     transition-delay: 0; }
   li.service h4 {
-    font-size: 16px; }
+    font-size: 16px;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
   li.service h5 {
     font-size: 16px;
     text-transform: none;

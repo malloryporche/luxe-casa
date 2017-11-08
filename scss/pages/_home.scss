@@ -6,11 +6,11 @@ ul.nav.navbar-nav {
 
 /* Header Carousel Styling */
 header.row.heading {
-  background: url('../imgs/carousel1/bh10.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-backgroound-size: cover;
-  background-size: cover;
+  background: url('../imgs/carousel1/bh10.jpg') no-repeat center center scroll;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-backgroound-size: cover;
+  // background-size: cover;
   height: 100%;
   svg {
   width: 100%;
@@ -18,6 +18,14 @@ header.row.heading {
   left: 0;
   bottom: 0;
   fill: white;
+  }
+  @include retina {
+    background: url('../imgs/carousel1/bh10@2x.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 .carousel-inner, .carousel-item {
@@ -80,7 +88,30 @@ article.wrap.p-2 {
 li.service {
   text-align: center;
   padding: 60px;
+  // @include transition(all, .5s, ease-in-out, 0);
+  &#firstService {
+    background-color: $primary_color;
+    color: $light_gray;
+  }
+  &#secondService {
+    background-color: $secondary_color;
+  }
+  &#thirdService {
+    background-color: $marigold;
+  }
+  &#fourthService {
+    background-color: $light_gray;
+    &:hover {
+      color: $primary_darker;
+    }
+  }
   &:hover {
+    color: white;
+    @include transition(all, .5s, ease-in-out,0);
+    h4 {
+      transform: scale(1.5);
+      @include transition(all, 0.5s, ease-in-out,0);
+    }
     i.fa {
       transform: scale(.5);
       @include transition(all, .5s, ease-in-out,0);
@@ -89,15 +120,16 @@ li.service {
   i.fa {
     padding: 45px;
     margin: 25px auto;
-    border: 1px solid black;
+    border: 1px solid $primary_darker;
     border-radius: 50%;
-    background-color: $primary_color;
+    background-color: $primary_darker;
     color: white;
     font-size: 45px;
     @include transition(all, .5s, ease-in-out,0);
   }
   h4 {
     font-size: 16px;
+    @include transition(all, .5s, ease-in-out,0);
   }
   h5 {
     font-size: 16px;
