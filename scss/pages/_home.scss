@@ -138,3 +138,36 @@ li.service {
     line-height: 1.5;
   }
 }
+
+/* Blog Section */
+section#blog.row {
+  ul, li {
+    padding: 0;
+  }
+}
+article.blog {
+  h3 {
+    @include centered;
+  }
+}
+
+/* Team Section Styling */
+section#about.row {
+  div {
+    padding: 0;
+  }
+  img {
+    width: 100%;
+  }
+  .team-title {
+    @include centered;
+    text-align: center;
+    ul.social {
+      padding-left: 0;
+      li {
+      display: inline-block;
+      padding: 08px;
+      }
+    }
+  }
+}

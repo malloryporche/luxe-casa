@@ -338,4 +338,39 @@ li.service {
     padding: 10px 30px 30px 30px;
     line-height: 1.5; }
 
+/* Blog Section */
+section#blog.row ul, section#blog.row li {
+  padding: 0; }
+
+article.blog h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+/* Team Section Styling */
+section#about.row div {
+  padding: 0; }
+section#about.row img {
+  width: 100%; }
+section#about.row .team-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  section#about.row .team-title ul.social {
+    padding-left: 0; }
+    section#about.row .team-title ul.social li {
+      display: inline-block;
+      padding: 08px; }
+
 /*# sourceMappingURL=styles.css.map */
