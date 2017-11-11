@@ -1,7 +1,16 @@
 /* Navbar styling */
-ul.nav.navbar-nav {
+ul.nav {
   position: absolute;
   right: 25px;
+  @include breakpoint(sm) {
+    right: 0;
+  }
+}
+/* Scrollspy Styling */
+main {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 /* Header Carousel Styling */
@@ -162,6 +171,7 @@ section#about.row {
   .team-title {
     @include centered;
     text-align: center;
+    padding: 90px;
     ul.social {
       padding-left: 0;
       li {

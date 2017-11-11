@@ -116,13 +116,23 @@ nav#navbarSpy {
   background-color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 15px; }
+  font-size: 15px;
+  color: black; }
 
 /*  PAGE: HOME & NAVIGATION  */
 /* Navbar styling */
-ul.nav.navbar-nav {
+ul.nav {
   position: absolute;
   right: 25px; }
+  @media (min-width: 768px) {
+    ul.nav {
+      right: 0; } }
+
+/* Scrollspy Styling */
+main {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll; }
 
 /* Header Carousel Styling */
 header.row.heading {
@@ -366,7 +376,8 @@ section#about.row .team-title {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+  padding: 90px; }
   section#about.row .team-title ul.social {
     padding-left: 0; }
     section#about.row .team-title ul.social li {
