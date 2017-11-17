@@ -123,10 +123,15 @@ nav#navbarSpy {
 /* Navbar styling */
 ul.nav {
   position: absolute;
-  right: 25px; }
-  @media (min-width: 768px) {
+  right: 25px;
+  background-color: #fff; }
+  @media (max-width: 767px) {
     ul.nav {
-      right: 0; } }
+      right: 0;
+      width: 100%;
+      text-align: center; }
+      ul.nav li {
+        display: inline-block; } }
 
 /* Scrollspy Styling */
 main {
@@ -135,14 +140,20 @@ main {
   overflow-y: scroll; }
 
 /* Header Carousel Styling */
+svg {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
 header.row.heading {
   background: url("../imgs/carousel1/bh10.jpg") no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-backgroound-size: cover;
+  background-size: cover;
   height: 100%; }
   header.row.heading svg {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
     fill: white; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     header.row.heading {
@@ -383,5 +394,9 @@ section#about.row .team-title {
     section#about.row .team-title ul.social li {
       display: inline-block;
       padding: 08px; }
+
+/* SVG Styling */
+svg:last-of-type {
+  fill: #313139; }
 
 /*# sourceMappingURL=styles.css.map */

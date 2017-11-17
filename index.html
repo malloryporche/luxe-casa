@@ -41,7 +41,7 @@
 <!--Carousel Header -->
 <div class="container-fluid">
 	<!--Navbar -->
-	<nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navbarSpy">
+	<nav class="navbar nav fixed-top navbar-expand-lg navbar-light" id="navbarSpy">
 		<a class="navbar-brand" href="#page-top"><img src="imgs/logo.png" width="45px" alt="Mallory Burke Software Developer and Digital Marketing SEO"></a>
 
 	<!--Toggle mobile navigation -->
@@ -60,9 +60,9 @@
 			<li class="nav-item">
 				<a class="nav-link" href="#services">Services</a>
 			</li>
-			<li class="nav-item">
+			<!-- <li class="nav-item">
 				<a class="nav-link" href="#blog">Blog</a>
-			</li>
+			</li> -->
 			<li class="nav-item">
 				<a class="nav-link" href="#about">About</a>
 			</li>
@@ -95,7 +95,6 @@
 					</div>
 					<div class="carousel-item">
 							<div class="caption">
-								img[../img]
 								<h3>Welcome to Tenuto</h3>
 								<h6>Choose from over 20 designer schemes</h6>
 							</div>
@@ -349,8 +348,26 @@
 <section class="row" id="contact">
 	<div class="col-lg-12">
 		<div class="row">
-			<div class="col-lg-6 col-md-12"><h2>Drop us a line</h2></div>
-			<div class="col-lg-6 col-md-12"><h2>Form</h2></div>
+			<div class="col-lg-6 col-md-12"><h2>Drop us a line</h2>
+				<h6>The simple contact form comes packed within this theme, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur minus neque expedita ut quibusdam doloribus, doloremque cumque beatae dolorem deserunt quod, iusto eligendi delectus aliquid amet culpa. Distinctio, enim, soluta.</h6>
+				<address><p>Address: Kings Road<br>Los Angeles, California</p></address>
+				<phone><p>Phone: +000 123 4567</p></phone>
+				<email><p><a href="mailto:reachout@malloryburke.com">Email us</a></p></email>
+
+			</div>
+			<div class="col-lg-6 col-md-12" id="contactForm">
+				<form action="contact.php" class="contact-form" method="POST">
+					<p>
+						<input type="text" id="user_name" name="user_name" placeholder="NAME">
+						<input type="text" id="user_email" name="user_emaile" placeholder="EMAIL">
+						<textarea name="message" id="user_message" placeholder="YOUR REVIEW"></textarea>
+					</p>
+					<div>
+						<input id="send_form" type="submit" value="SEND"></div>
+					</div>
+				</form>
+
+			</div>
 		</div>
 	</div>
 </section>
