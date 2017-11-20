@@ -33,6 +33,12 @@ Made with love by Mallory | https://www.malloryburke.com
 /* Serve images optimized for retina screens */
 /*  GLOBAL STYLES  */
 /* Typography, headings */
+div.container-fluid {
+  padding: 0; }
+
+div.row {
+  margin: 0; }
+
 body {
   font-family: "Raleway";
   font-weight: 300; }
@@ -119,6 +125,10 @@ nav#navbarSpy {
   font-size: 15px;
   color: black; }
 
+footer.row {
+  background-color: #313139;
+  margin: 0; }
+
 /*  PAGE: HOME & NAVIGATION  */
 /* Navbar styling */
 ul.nav {
@@ -136,8 +146,7 @@ ul.nav {
 /* Scrollspy Styling */
 main {
   position: relative;
-  height: 100%;
-  overflow-y: scroll; }
+  height: 100%; }
 
 /* Header Carousel Styling */
 svg {
@@ -152,7 +161,8 @@ header.row.heading {
   -moz-background-size: cover;
   -o-backgroound-size: cover;
   background-size: cover;
-  height: 100%; }
+  height: 100%;
+  margin: 0; }
   header.row.heading svg {
     fill: white; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -205,6 +215,11 @@ h2.welcome {
     line-height: 1.5; }
 
 /* Portfolio Flexbox Display */
+section#portfolio.row {
+  padding: 0; }
+  section#portfolio.row div.col-lg-12.col-lg-offset-1.portfolio-outer {
+    padding: 0; }
+
 article.portfolio-outer {
   display: -webkit-flex;
   display: -ms-flex;
@@ -212,6 +227,8 @@ article.portfolio-outer {
 
 article.wrap.p-2 {
   position: relative; }
+  article.wrap.p-2 img {
+    max-width: 100%; }
   article.wrap.p-2 h3 {
     position: absolute;
     top: 50%;
@@ -374,29 +391,48 @@ article.blog h3 {
   transform: translate(-50%, -50%); }
 
 /* Team Section Styling */
-section#about.row div {
-  padding: 0; }
-section#about.row img {
-  width: 100%; }
-section#about.row .team-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 90px; }
-  section#about.row .team-title ul.social {
-    padding-left: 0; }
-    section#about.row .team-title ul.social li {
-      display: inline-block;
-      padding: 08px; }
+section#about.row {
+  margin-bottom: 0; }
+  section#about.row div.row {
+    padding: 0;
+    margin: 0; }
+  section#about.row img {
+    width: 100%; }
+  section#about.row .team-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 90px; }
+    section#about.row .team-title ul.social {
+      padding-left: 0; }
+      section#about.row .team-title ul.social li {
+        display: inline-block;
+        padding: 08px; }
 
-/* SVG Styling */
+section#contact.row {
+  margin-top: 0; }
+  section#contact.row div.col-lg-12 {
+    padding: 0; }
+  section#contact.row .box {
+    padding: 150px 0; }
+    section#contact.row .box:first-of-type {
+      background-color: #F2F2F5; }
+    section#contact.row .box:last-of-type {
+      background-color: #313139; }
+
+/* Footer SVG Styling */
+section#footerMask {
+  margin-bottom: 0; }
+
 svg:last-of-type {
-  fill: #313139; }
+  background-color: #313139;
+  fill: white;
+  transform: rotate(180deg); }
 
 /*# sourceMappingURL=styles.css.map */

@@ -16,7 +16,6 @@ ul.nav {
 main {
   position: relative;
   height: 100%;
-  overflow-y: scroll;
 }
 
 /* Header Carousel Styling */
@@ -33,6 +32,7 @@ header.row.heading {
   -o-backgroound-size: cover;
   background-size: cover;
   height: 100%;
+  margin: 0;
   svg {
     fill: white;
   }
@@ -87,6 +87,12 @@ h2.welcome {
 
 
 /* Portfolio Flexbox Display */
+section#portfolio.row {
+  padding: 0;
+  div.col-lg-12.col-lg-offset-1.portfolio-outer {
+    padding: 0;
+  }
+}
 article.portfolio-outer {
   display: -webkit-flex;
   display: -ms-flex;
@@ -95,6 +101,9 @@ article.portfolio-outer {
 
 article.wrap.p-2 {
   position: relative;
+  img {
+    max-width: 100%;
+  }
   h3 {
     @include centered;
   }
@@ -170,8 +179,10 @@ article.blog {
 
 /* Team Section Styling */
 section#about.row {
-  div {
+  margin-bottom: 0;
+  div.row {
     padding: 0;
+    margin: 0;
   }
   img {
     width: 100%;
@@ -189,8 +200,27 @@ section#about.row {
     }
   }
 }
-
-/* SVG Styling */
+section#contact.row {
+  margin-top: 0;
+  div.col-lg-12 {
+    padding: 0;
+  }
+  .box {
+    padding: 150px 0;
+    &:first-of-type {
+      background-color: $light_gray;
+    }
+    &:last-of-type {
+      background-color: $primary_color;
+    }
+  }
+}
+/* Footer SVG Styling */
+section#footerMask {
+  margin-bottom: 0;
+}
 svg:last-of-type {
-  fill: $primary_color;
+  background-color: $primary_color;
+  fill: white;
+  transform: rotate(180deg);
 }
