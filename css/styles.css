@@ -164,7 +164,11 @@ header.row.heading {
   height: 100%;
   margin: 0; }
   header.row.heading svg {
-    fill: white; }
+    fill: white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     header.row.heading {
       background: url("../imgs/carousel1/bh10@2x.jpg") no-repeat center center fixed;
@@ -429,10 +433,9 @@ section#contact.row {
 /* Footer SVG Styling */
 section#footerMask {
   margin-bottom: 0; }
-
-svg:last-of-type {
-  background-color: #313139;
-  fill: white;
-  transform: rotate(180deg); }
+  section#footerMask svg:last-of-type {
+    background-color: #313139;
+    fill: white;
+    transform: rotate(180deg); }
 
 /*# sourceMappingURL=styles.css.map */

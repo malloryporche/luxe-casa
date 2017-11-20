@@ -35,6 +35,10 @@ header.row.heading {
   margin: 0;
   svg {
     fill: white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
   @include retina {
     background: url('../imgs/carousel1/bh10@2x.jpg') no-repeat center center fixed;
@@ -218,9 +222,9 @@ section#contact.row {
 /* Footer SVG Styling */
 section#footerMask {
   margin-bottom: 0;
-}
-svg:last-of-type {
-  background-color: $primary_color;
-  fill: white;
-  transform: rotate(180deg);
+  svg:last-of-type {
+    background-color: $primary_color;
+    fill: white;
+    transform: rotate(180deg);
+  }
 }
