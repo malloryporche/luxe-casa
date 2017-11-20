@@ -132,16 +132,14 @@ footer.row {
 /*  PAGE: HOME & NAVIGATION  */
 /* Navbar styling */
 ul.nav {
-  position: absolute;
   right: 25px;
   background-color: #fff; }
   @media (max-width: 767px) {
     ul.nav {
       right: 0;
       width: 100%;
-      text-align: center; }
-      ul.nav li {
-        display: inline-block; } }
+      text-align: center;
+      display: block; } }
 
 /* Scrollspy Styling */
 main {

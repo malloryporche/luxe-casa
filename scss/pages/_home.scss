@@ -1,15 +1,12 @@
 /* Navbar styling */
 ul.nav {
-  position: absolute;
   right: 25px;
   background-color: #fff;
   @include breakpoint(xs) {
     right: 0;
     width: 100%;
     text-align: center;
-    li {
-      display: inline-block;
-    }
+    display: block;
   }
 }
 /* Scrollspy Styling */
