@@ -32,6 +32,10 @@ Made with love by Mallory | https://www.malloryburke.com
 /* DEFINE VARIABLES & MIXINS */
 /* Serve images optimized for retina screens */
 /*  GLOBAL STYLES  */
+main {
+  position: relative;
+  height: 100%; }
+
 /* Typography, headings */
 div.container-fluid {
   padding: 0; }
@@ -55,7 +59,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 60px; }
 
 ul li {
-  list-style-type: none; }
+  list-style-type: none;
+  display: inline-block; }
 
 a {
   text-decoration: none;
@@ -127,7 +132,8 @@ nav#navbarSpy {
 
 footer.row {
   background-color: #313139;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
 
 /*  PAGE: HOME & NAVIGATION  */
 /* Navbar styling */
@@ -140,10 +146,6 @@ ul.nav {
       width: 100%;
       text-align: center;
       display: block; } }
-
-main {
-  position: relative;
-  height: 100%; }
 
 /* Header Carousel Styling */
 svg {
@@ -464,7 +466,9 @@ section#contact.row {
         -o-transition-delay: 0s;
         transition-delay: 0s; }
     section#contact.row .box input[type="submit"] {
-      border: 2px solid white; }
+      border: 2px solid white;
+      margin-top: 50px;
+      padding: 15px; }
       section#contact.row .box input[type="submit"]:hover {
         -webkit-transition-property: all;
         -moz-transition-property: all;
@@ -495,6 +499,10 @@ section#contact.row {
       background-color: #F2F2F5; }
     section#contact.row .box:last-of-type {
       background-color: #313139; }
+      @media (max-width: 767px) {
+        section#contact.row .box:last-of-type {
+          margin-bottom: 80px;
+          padding: 70px 0; } }
 
 /* Footer SVG Styling */
 section#footerMask {

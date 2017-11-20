@@ -10,11 +10,6 @@ ul.nav {
   }
 }
 
-main {
-  position: relative;
-  height: 100%;
-}
-
 /* Header Carousel Styling */
 svg {
 width: 100%;
@@ -239,6 +234,8 @@ section#contact.row {
     }
     input[type="submit"]{
       border: 2px solid white;
+      margin-top: 50px;
+      padding: 15px;
       &:hover {
         @include hover-highlight(white);
         border: 2px solid white;
@@ -253,6 +250,10 @@ section#contact.row {
     }
     &:last-of-type {
       background-color: $primary_color;
+      @include breakpoint(xs) {
+        margin-bottom: 80px;
+        padding: 70px 0;
+      }
     }
   }
 
