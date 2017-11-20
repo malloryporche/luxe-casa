@@ -205,12 +205,12 @@ section.row {
   margin: 150px 0; }
 
 /* Welcome Section */
-h2.welcome {
+section#welcome.row h2.welcome {
   margin: 45px auto;
   letter-spacing: 3px;
   line-height: 1.75;
   font-weight: light; }
-  h2.welcome + p {
+  section#welcome.row h2.welcome + p {
     padding: 20px;
     text-align: center;
     line-height: 1.5; }
@@ -397,12 +397,14 @@ article.blog h3 {
 /* Team Section Styling */
 section#about.row {
   margin-bottom: 0; }
+  section#about.row div.col-lg-6.col-md-12 {
+    padding: 0; }
   section#about.row div.row {
     padding: 0;
     margin: 0; }
   section#about.row img {
     width: 100%; }
-  section#about.row .team-title {
+  section#about.row div.title-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -411,20 +413,84 @@ section#about.row {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 90px; }
-    section#about.row .team-title ul.social {
+    text-align: center; }
+    section#about.row div.title-text ul.social {
       padding-left: 0; }
-      section#about.row .team-title ul.social li {
+      section#about.row div.title-text ul.social li {
         display: inline-block;
         padding: 08px; }
 
+/* Contact Styling */
 section#contact.row {
   margin-top: 0; }
   section#contact.row div.col-lg-12 {
     padding: 0; }
   section#contact.row .box {
-    padding: 150px 0; }
+    padding: 25px 0;
+    text-align: center; }
+    section#contact.row .box input, section#contact.row .box textarea {
+      color: white;
+      margin: 20px;
+      border: none;
+      border-bottom: 2px solid white;
+      background-color: transparent;
+      display: block;
+      width: 90%; }
+      section#contact.row .box input:focus, section#contact.row .box textarea:focus {
+        color: white;
+        border-color: green;
+        outline-offset: 0;
+        outline-color: tranpsarent;
+        outline-style: none;
+        outline-width: none;
+        -webkit-transition-property: border-color;
+        -moz-transition-property: border-color;
+        -ms-transition-property: border-color;
+        -o-transition-property: border-color;
+        transition-property: border-color;
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        -ms-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-timing-function: ease;
+        -ms-transition-timing-function: ease;
+        -o-transition-timing-function: ease;
+        transition-timing-function: ease;
+        -webkit-transition-delay: 0s;
+        -moz-transition-delay: 0s;
+        -ms-transition-delay: 0s;
+        -o-transition-delay: 0s;
+        transition-delay: 0s; }
+    section#contact.row .box input[type="submit"] {
+      border: 2px solid white; }
+      section#contact.row .box input[type="submit"]:hover {
+        -webkit-transition-property: all;
+        -moz-transition-property: all;
+        -ms-transition-property: all;
+        -o-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.5s;
+        -moz-transition-duration: 0.5s;
+        -ms-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-in-out;
+        -moz-transition-timing-function: ease-in-out;
+        -ms-transition-timing-function: ease-in-out;
+        -o-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
+        -webkit-transition-delay: 0s;
+        -moz-transition-delay: 0s;
+        -ms-transition-delay: 0s;
+        -o-transition-delay: 0s;
+        transition-delay: 0s;
+        background-color: white;
+        border: 2px solid white;
+        color: black; }
+    section#contact.row .box p {
+      margin: 40px 20px 20px; }
     section#contact.row .box:first-of-type {
       background-color: #F2F2F5; }
     section#contact.row .box:last-of-type {

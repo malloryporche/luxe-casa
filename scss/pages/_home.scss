@@ -74,18 +74,19 @@ section.row {
 }
 
 /* Welcome Section */
-h2.welcome {
-  margin: 45px auto;
-  letter-spacing: 3px;
-  line-height: 1.75;
-  font-weight: light;
-  + p {
-    padding: 20px;
-    text-align: center;
-    line-height: 1.5;
+section#welcome.row {
+  h2.welcome {
+    margin: 45px auto;
+    letter-spacing: 3px;
+    line-height: 1.75;
+    font-weight: light;
+    + p {
+      padding: 20px;
+      text-align: center;
+      line-height: 1.5;
+    }
   }
 }
-
 
 /* Portfolio Flexbox Display */
 section#portfolio.row {
@@ -186,6 +187,9 @@ article.blog {
 /* Team Section Styling */
 section#about.row {
   margin-bottom: 0;
+  div.col-lg-6.col-md-12 {
+    padding: 0;
+  }
   div.row {
     padding: 0;
     margin: 0;
@@ -193,10 +197,9 @@ section#about.row {
   img {
     width: 100%;
   }
-  .team-title {
+  div.title-text {
     @include centered;
     text-align: center;
-    padding: 90px;
     ul.social {
       padding-left: 0;
       li {
@@ -206,13 +209,45 @@ section#about.row {
     }
   }
 }
+
+/* Contact Styling */
 section#contact.row {
   margin-top: 0;
   div.col-lg-12 {
     padding: 0;
   }
   .box {
-    padding: 150px 0;
+    padding: 25px 0;
+    text-align: center;
+    input, textarea {
+      color: white;
+      margin: 20px;
+      border: none;
+      border-bottom: 2px solid white;
+      background-color: transparent;
+      display: block;
+      width: 90%;
+      &:focus {
+        color: white;
+        border-color: green;
+        outline-offset: 0;
+        outline-color: tranpsarent;
+        outline-style: none;
+        outline-width: none;
+        @include transition(border-color, 1s, ease, 0s);
+      }
+    }
+    input[type="submit"]{
+      border: 2px solid white;
+      &:hover {
+        @include hover-highlight(white);
+        border: 2px solid white;
+        color: black;
+      }
+    }
+    p {
+      margin: 40px 20px 20px;
+    }
     &:first-of-type {
       background-color: $light_gray;
     }
@@ -220,6 +255,7 @@ section#contact.row {
       background-color: $primary_color;
     }
   }
+
 }
 /* Footer SVG Styling */
 section#footerMask {

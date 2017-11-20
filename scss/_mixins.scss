@@ -38,6 +38,59 @@
 	transition-delay: $transition_delay;
 }
 
+@mixin hover-highlight($color){
+  -webkit-transition-property: all;
+	-moz-transition-property: all;
+	-ms-transition-property: all;
+	-o-transition-property: all;
+	transition-property: all;
+
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-timing-function: ease-in-out;
+	-ms-transition-timing-function: ease-in-out;
+	-o-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+
+	-webkit-transition-delay: 0s;
+	-moz-transition-delay: 0s;
+	-ms-transition-delay: 0s;
+	-o-transition-delay: 0s;
+	transition-delay: 0s;
+
+  background-color: $color;
+}
+
+@mixin slide {
+  -webkit-transition-property: all;
+	-moz-transition-property: all;
+	-ms-transition-property: all;
+	-o-transition-property: all;
+	transition-property: all;
+
+	-webkit-transition-duration: $transition_duration;
+	-moz-transition-duration: $transition_duration;
+	-ms-transition-duration: $transition_duration;
+	-o-transition-duration: $transition_duration;
+	transition-duration: $transition_duration;
+
+	-webkit-transition-timing-function: $transition_timing_function;
+	-moz-transition-timing-function: $transition_timing_function;
+	-ms-transition-timing-function: $transition_timing_function;
+	-o-transition-timing-function: $transition_timing_function;
+	transition-timing-function: $transition_timing_function;
+
+	-webkit-transition-delay: $transition_delay;
+	-moz-transition-delay: $transition_delay;
+	-ms-transition-delay: $transition_delay;
+	-o-transition-delay: $transition_delay;
+	transition-delay: $transition_delay;
+}
 //	ANIMATE TRANSFORM  //
 @mixin transform($transition_duration, $transition_timing_function, $transition_delay) {
 	-webkit-transition-duration: $transition_duration;
