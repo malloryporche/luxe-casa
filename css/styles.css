@@ -141,7 +141,6 @@ ul.nav {
       text-align: center;
       display: block; } }
 
-/* Scrollspy Styling */
 main {
   position: relative;
   height: 100%; }
@@ -242,6 +241,9 @@ article.wrap.p-2 {
     transform: translate(-50%, -50%); }
 
 /* Services Styling */
+section#services.row ul.col-lg-12 {
+  padding: 0; }
+
 li.service {
   text-align: center;
   padding: 60px; }
