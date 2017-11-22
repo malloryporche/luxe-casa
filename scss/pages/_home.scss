@@ -18,13 +18,13 @@ left: 0;
 bottom: 0;
 }
 header.row.heading {
-  background: url('../imgs/carousel1/bh10.jpg') no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-backgroound-size: cover;
-  background-size: cover;
-  height: 100%;
-  margin: 0;
+  // background: url('../imgs/carousel1/bh10.jpg') no-repeat center center scroll;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-backgroound-size: cover;
+  // background-size: cover;
+  // height: 100%;
+  // margin: 0;
   svg {
     fill: white;
     width: 100%;
@@ -70,6 +70,7 @@ section.row {
 
 /* Welcome Section */
 section#welcome.row {
+  text-align: center;
   h2.welcome {
     margin: 45px auto;
     letter-spacing: 3px;
@@ -234,8 +235,9 @@ section#contact.row {
     }
     input[type="submit"]{
       border: 2px solid white;
-      margin-top: 50px;
+      margin: 50px auto;
       padding: 15px;
+      max-width: 250px;
       &:hover {
         @include hover-highlight(white);
         border: 2px solid white;
