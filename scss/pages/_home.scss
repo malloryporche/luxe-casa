@@ -98,13 +98,38 @@ article.portfolio-outer {
 }
 
 article.wrap.p-2 {
+  overflow: hidden;
   position: relative;
+  padding: 0 !important;
+  margin: 0.5rem;
+  h3 {
+    height: 100%;
+    width: 100%;
+    @include centered;
+    padding: 50% 0;
+    z-index: -1;
+    @include transition(z-index, 0.25s, ease-in, 0);
+  }
   img {
     max-width: 100%;
+    -webkit-transform: scale(1);
+    @include transition(-webkit-transform, 0.25s, ease-in, 0);
   }
-  h3 {
-    @include centered;
+
+  &:hover {
+    img {
+      -webkit-transform: scale(1.5);
+      @include transition(all, 0.25s, ease-in, 0);
+    }
+    h3 {
+      z-index: 10;
+      background-color: black;
+      @include transition(z-index, 0.25s, ease-in, 0);
+      @include transition(background-color, 0.25s, ease-in, 0);
+    }
   }
+
+
 }
 
 
