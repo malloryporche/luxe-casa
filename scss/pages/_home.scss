@@ -6,10 +6,8 @@ ul.nav {
     right: 0;
     width: 100%;
     text-align: center;
-    display: block;
   }
 }
-
 /* Header Carousel Styling */
 svg {
 width: 100%;
@@ -65,7 +63,7 @@ header.row.heading {
 
 /* Section Styling */
 section.row {
-  margin: 150px 0;
+  margin: 150px 0 0;
 }
 
 /* Welcome Section */
@@ -101,7 +99,6 @@ article.wrap.p-2 {
   overflow: hidden;
   position: relative;
   padding: 0 !important;
-  margin: 0.5rem;
   h3 {
     height: 100%;
     width: 100%;
