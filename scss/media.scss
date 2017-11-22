@@ -16,3 +16,9 @@ only screen and (min-resolution: 1.5dppx) {
     background-size: cover;
   }
 }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: block !important;
+  }
+}
