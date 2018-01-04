@@ -121,7 +121,7 @@ article.wrap.p-2 {
     }
     h3 {
       z-index: 10;
-      background-color: black;
+      background-color: $primary_color;
       @include transition(z-index, 0.25s, ease-in, 0);
       @include transition(background-color, 0.25s, ease-in, 0);
     }
