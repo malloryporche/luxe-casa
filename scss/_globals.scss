@@ -33,8 +33,13 @@ ul li {
 a {
   text-decoration: none;
   text-align: center;
+  color: black;
+  // letter-spacing: 3px;
+  font-weight: 900;
   &:hover {
     text-decoration: none;
+    color: $marigold;
+    @include transition(all, 0.5s, ease-in-out, 0s);
   }
 }
 a.link {
@@ -49,7 +54,6 @@ a.link {
     @include breakpoint(xs) {
       margin: 5px;
     }
-    letter-spacing: 2px;
     @include transition(all, .5s, ease-in-out, 0);
     &:hover {
       background-color: black;
@@ -68,7 +72,16 @@ nav#navbarSpy {
   font-size: 15px;
   color: black;
 }
+section.row {
+  background-color: #fff;
+  z-index: 1;
+}
 footer.row {
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
   background-color: $primary_color;
   margin: 0;
   text-align: center;

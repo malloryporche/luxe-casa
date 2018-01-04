@@ -2,6 +2,7 @@
 ul.nav {
   right: 25px;
   background-color: #fff;
+  float: right;
   @include breakpoint(xs) {
     li {
       list-style-type: none;
@@ -66,21 +67,28 @@ header.row.heading {
 
 /* Section Styling */
 section.row {
-  margin: 150px 0 0;
+  padding: 150px 0 0;
+  z-index: 2;
 }
 
 /* Welcome Section */
 section#welcome.row {
   text-align: center;
+  padding-bottom: 150px;
   h2.welcome {
     margin: 45px auto;
     letter-spacing: 3px;
     line-height: 1.75;
     font-weight: light;
     + p {
-      padding: 20px;
+      padding: 20px 50px;
       text-align: center;
       line-height: 1.5;
+    }
+    @include breakpoint(md) {
+      p {
+        padding: 60px 100px;
+      }
     }
   }
 }
@@ -214,12 +222,12 @@ section#about {
       padding: 0;
       overflow: hidden;
       img {
-        @include transition(all, 0.2s, ease-in, 0);
+        @include transition(all, 0.25s, ease-in, 0.25s);
       }
       div.title-text {
         @include transition(all, 0.25s, ease-in, 0.25s);
         h3 {
-          color: $marigold;
+          color: $secondary_color;
         }
       }
       &:hover {
@@ -264,6 +272,8 @@ section#about {
 
 /* Contact Styling */
 section#contact.row {
+  padding: 0;
+  margin-bottom: 350px;
   margin-top: 0;
   div.col-lg-12 {
     padding: 0;
@@ -318,7 +328,12 @@ section#contact.row {
 }
 /* Footer SVG Styling */
 section#footerMask {
+  z-index: -1;
   margin-bottom: 0;
+  position: fixed;
+  bottom: 183px;
+  right: 0;
+  left: 0;
   svg:last-of-type {
     background-color: $primary_color;
     fill: white;
