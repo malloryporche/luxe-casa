@@ -150,16 +150,11 @@ ul.nav {
   right: 25px;
   background-color: #fff; }
   @media (max-width: 767px) {
-    ul.nav {
-      right: 0;
-      width: 100%;
+    ul.nav li {
+      list-style-type: none;
+      display: block;
       text-align: center;
-      display: block; } }
-  ul.nav li {
-    list-style-type: none;
-    display: block;
-    text-align: center;
-    width: 100%; }
+      width: 100%; } }
 
 /* Header Carousel Styling */
 svg {

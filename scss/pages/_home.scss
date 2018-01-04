@@ -3,16 +3,12 @@ ul.nav {
   right: 25px;
   background-color: #fff;
   @include breakpoint(xs) {
-    right: 0;
-    width: 100%;
-    text-align: center;
-    display: block;
-  }
-  li {
-    list-style-type: none;
-    display: block;
-    text-align: center;
-    width: 100%;
+    li {
+      list-style-type: none;
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
   }
 }
 /* Header Carousel Styling */
