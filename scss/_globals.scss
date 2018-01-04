@@ -19,6 +19,11 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+span.accent {
+  font-weight: bolder;
+  color: $accent_green;
+  @include transition(all, 0.5s, ease-in-out, 0s);
+}
 .col-lg-12 h2 {
   + h6 {
     margin-bottom: 100px;
@@ -34,7 +39,6 @@ a {
   text-decoration: none;
   text-align: center;
   color: black;
-  // letter-spacing: 3px;
   font-weight: 900;
   &:hover {
     text-decoration: none;
@@ -51,8 +55,15 @@ a.link {
     border: 1px solid black;
     background-color: white;
     margin: 20px;
+    &:hover {
+      span {
+      color: $secondary_color;
+      @include transition(all, 0.5s, ease-in-out, 0s);
+      }
+    }
     @include breakpoint(xs) {
       margin: 5px;
+      float: none;
     }
     @include transition(all, .5s, ease-in-out, 0);
     &:hover {
@@ -92,4 +103,9 @@ footer.row {
       padding: 9px;
     }
   }
+}
+/* Section Styling */
+section.row {
+  padding: 150px 0 0;
+  z-index: 2;
 }
