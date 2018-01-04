@@ -212,8 +212,13 @@ section#about {
       padding: 0;
       overflow: hidden;
       img {
-        -webkit-transform: scale(1);
-        @include transition(-webkit-transform, 0.2s, ease-in, 0);
+        @include transition(all, 0.2s, ease-in, 0);
+      }
+      div.title-text {
+        @include transition(all, 0.25s, ease-in, 0.25s);
+        h3 {
+          color: $marigold;
+        }
       }
       &:hover {
         img {
@@ -222,9 +227,10 @@ section#about {
         }
         div.title-text {
           z-index: 5;
-          background-color: black;
-          @include transition(z-index, 0.25s, ease-in, 0.25s);
-          @include transition(background-color, 0.25s, ease-in, 0);
+          background-color: $primary_color;
+          color: white;
+          @include transition(all, 0.25s, ease-in, 0.25s);
+          // @include transition(background-color, 0.25s, ease-in, 0);
         }
       }
     }
