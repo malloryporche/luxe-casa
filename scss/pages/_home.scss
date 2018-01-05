@@ -3,6 +3,9 @@ ul.nav {
   right: 25px;
   background-color: #fff;
   float: right;
+  display: block;
+  text-align: center;
+  width: 100%;
   @include breakpoint(xs) {
     li {
       list-style-type: none;

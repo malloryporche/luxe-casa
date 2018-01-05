@@ -232,7 +232,10 @@ section.row {
 ul.nav {
   right: 25px;
   background-color: #fff;
-  float: right; }
+  float: right;
+  display: block;
+  text-align: center;
+  width: 100%; }
   @media (max-width: 767px) {
     ul.nav li {
       list-style-type: none;
