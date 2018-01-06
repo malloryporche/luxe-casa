@@ -232,10 +232,7 @@ section.row {
 ul.nav {
   right: 25px;
   background-color: #fff;
-  float: right;
-  display: block;
-  text-align: center;
-  width: 100%; }
+  float: right; }
   @media (max-width: 767px) {
     ul.nav li {
       list-style-type: none;
@@ -249,6 +246,9 @@ svg {
   position: absolute;
   left: 0;
   bottom: 0; }
+
+div#headerCarousel.col-lg-12 {
+  padding: 0; }
 
 header.row.heading svg {
   fill: white;
